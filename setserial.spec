@@ -1,10 +1,11 @@
 Summary:	A utility for configuring serial ports
 Name:		setserial
 Version:	2.17
-Release:	%mkrel 10
+Release:	%mkrel 11
 License:	GPL
 Group:		System/Configuration/Hardware
-Source:		ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
+URL:		http://setserial.sourceforge.net/
+Source: 	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
 BuildRequires:  groff-for-man
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -17,7 +18,6 @@ You should install setserial because you may find it useful for detecting
 and/or altering device information.
 
 %prep
-
 %setup -q
 
 %build
