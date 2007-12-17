@@ -7,7 +7,6 @@ Group:		System/Configuration/Hardware
 URL:		http://setserial.sourceforge.net/
 Source: 	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
 BuildRequires:  groff-for-man
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Setserial is a basic system utility for displaying or setting serial port
