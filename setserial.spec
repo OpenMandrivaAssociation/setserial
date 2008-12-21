@@ -1,11 +1,12 @@
 Summary:	A utility for configuring serial ports
 Name:		setserial
 Version:	2.17
-Release:	%mkrel 13
+Release:	%mkrel 14
 License:	GPL
 Group:		System/Configuration/Hardware
 URL:		http://setserial.sourceforge.net/
-Source: 	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
+Source0: 	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
+Patch0:		setserial-2.17-LDFLAGS.diff
 BuildRequires:  groff-for-man
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -19,6 +20,7 @@ and/or altering device information.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 rm -f config.cache
