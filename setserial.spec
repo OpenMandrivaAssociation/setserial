@@ -7,6 +7,7 @@ Group:		System/Configuration/Hardware
 URL:		http://setserial.sourceforge.net/
 Source0: 	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
 Patch0:		setserial-2.17-LDFLAGS.diff
+Patch1:		setserial-hayesesp.patch
 BuildRequires:  groff-for-man
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -21,6 +22,7 @@ and/or altering device information.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p1 -b .hayesesp
 
 %build
 rm -f config.cache
@@ -30,7 +32,7 @@ rm -f config.cache
 %ifarch %{ix86}
 %make
 %else
-%make DEFS="-DHAVE_ASM_IOCTLS_H=1 -DHAVE_LINUX_HAYESESP_H=1"
+%make DEFS="-DHAVE_ASM_IOCTLS_H=1"
 %endif
 
 %install
@@ -48,5 +50,3 @@ rm -rf %{buildroot}
 %{_mandir}/man8/%{name}.8*
 %defattr(755,root,root,755)
 /bin/%{name}
-
-
