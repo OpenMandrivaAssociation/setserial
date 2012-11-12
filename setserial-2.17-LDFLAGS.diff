@@ -1,0 +1,19 @@
+--- Makefile.in	2000-01-27 16:39:07.000000000 +0100
++++ Makefile.in.oden	2008-12-22 00:31:08.000000000 +0100
+@@ -13,6 +13,7 @@
+ CC = @CC@
+ RM = rm -f
+ CFLAGS = @CFLAGS@
++LDFLAGS = @LDFLAGS@
+ DEFS = @DEFS@
+ INCS = -I.
+ TAR = tar
+@@ -20,7 +21,7 @@
+ all: setserial setserial.cat
+ 
+ setserial: setserial.c
+-	$(CC) $(CFLAGS) $(DEFS) $(INCS) setserial.c -o setserial
++	$(CC) $(CFLAGS) $(LDFLAGS) $(DEFS) $(INCS) setserial.c -o setserial
+ 
+ setserial.cat: setserial.8
+ 	nroff -man setserial.8 > setserial.cat
