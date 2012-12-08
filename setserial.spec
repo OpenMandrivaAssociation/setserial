@@ -50,3 +50,60 @@ rm -rf %{buildroot}
 %{_mandir}/man8/%{name}.8*
 %defattr(755,root,root,755)
 /bin/%{name}
+
+
+%changelog
+* Fri May 06 2011 Oden Eriksson <oeriksson@mandriva.com> 2.17-18mdv2011.0
++ Revision: 669969
+- mass rebuild
+
+* Fri Dec 03 2010 Oden Eriksson <oeriksson@mandriva.com> 2.17-17mdv2011.0
++ Revision: 607532
+- rebuild
+
+* Tue Mar 16 2010 Oden Eriksson <oeriksson@mandriva.com> 2.17-16mdv2010.1
++ Revision: 521016
+- P1: fix build (fedora)
+- rebuilt for 2010.1
+
+* Thu Sep 03 2009 Christophe Fergeau <cfergeau@mandriva.com> 2.17-15mdv2010.0
++ Revision: 427068
+- rebuild
+
+* Mon Dec 22 2008 Oden Eriksson <oeriksson@mandriva.com> 2.17-14mdv2009.1
++ Revision: 317229
+- use %%ldflags (P0)
+
+* Wed Jun 18 2008 Thierry Vignaud <tv@mandriva.org> 2.17-13mdv2009.0
++ Revision: 225434
+- rebuild
+
+* Wed Mar 05 2008 Oden Eriksson <oeriksson@mandriva.com> 2.17-12mdv2008.1
++ Revision: 179501
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Thu May 17 2007 Herton Ronaldo Krzesinski <herton@mandriva.com.br> 2.17-11mdv2008.0
++ Revision: 27687
+- Added URL tag.
+
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 2.17-10mdv2007.1
++ Revision: 145455
+- Import setserial
+
+* Sat Mar 17 2007 Oden Eriksson <oeriksson@mandriva.com> 2.17-10mdv2007.1
+- use the %%mrel macro
+- bunzip patches
+
+* Sun Jan 01 2006 Mandriva Linux Team <http://www.mandrivaexpert.com/> 2.17-9mdk
+- Rebuild
+
+* Tue Jan 25 2005 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 2.17-8mdk
+- rebuild
+
