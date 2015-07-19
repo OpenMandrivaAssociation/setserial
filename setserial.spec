@@ -1,7 +1,7 @@
 Summary:	A utility for configuring serial ports
 Name:		setserial
 Version:	2.17
-Release:	26
+Release:	27
 License:	GPL
 Group:		System/Configuration/Hardware
 URL:		http://setserial.sourceforge.net/
