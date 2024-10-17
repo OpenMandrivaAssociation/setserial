@@ -4,7 +4,7 @@ Version:	2.17
 Release:	31
 License:	GPL
 Group:		System/Configuration/Hardware
-URL:		http://setserial.sourceforge.net/
+URL:		https://setserial.sourceforge.net/
 Source0: 	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/%{name}-%{version}.tar.bz2
 Patch0:		setserial-2.17-LDFLAGS.diff
 Patch1:		setserial-hayesesp.patch
